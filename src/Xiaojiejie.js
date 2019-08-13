@@ -7,7 +7,7 @@ class Xiaojiejie extends Component{
         super(props)
         this.state = {
             inputValue:'spa',
-            list:['1','2']
+            list:['小姐姐1号','2']
         }
     }
     render(){
