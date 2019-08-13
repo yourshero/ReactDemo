@@ -1,7 +1,6 @@
 import React,{Component,Fragment} from 'react'
 import XiaojiejieItem from './XiaojiejieItem'
 import EmptyXiaojiejie from './EmptyXiaojiejie'
-
 class Xiaojiejie extends Component{
     constructor(props){
         super(props)
@@ -16,7 +15,7 @@ class Xiaojiejie extends Component{
                 {/* 注释 */}
               <div>
                   <label htmlFor='spa'>加入服务：</label>
-                <input id='spa' value={this.state.inputValue} onChange={this.inputChange.bind(this)} />
+                <input id='spa' className='input' value={this.state.inputValue} onChange={this.inputChange.bind(this)} />
                 <button onClick={this.addList.bind(this)}>增加服务</button>
                    {
                        this.state.list.map((item,index)=>{
